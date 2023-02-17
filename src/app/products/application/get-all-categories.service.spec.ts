@@ -1,23 +1,23 @@
 import { Provider } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ProductRepository } from '../domain/repositories/product.repository';
-import { InMemoryProductsService } from '../infrastucture/inMemory/in-memory-products.service';
+import { CategoryRepository } from '../domain/repositories/category.repository';
+import { InMemoryCategoriesService } from '../infrastucture/inMemory/in-memory-categories.service';
 
-import { GetAllProductsService } from './get-all-products.service';
+import { GetAllCategoriesService } from './get-all-categories.service';
 
-describe('GetAllProductsService', () => {
-  let service: GetAllProductsService;
+describe('GetAllCategoriesService', () => {
+  let service: GetAllCategoriesService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: ProductRepository,
-          useClass: InMemoryProductsService,
+          provide: CategoryRepository,
+          useClass: InMemoryCategoriesService,
         } as Provider,
       ],
     });
-    service = TestBed.inject(GetAllProductsService);
+    service = TestBed.inject(GetAllCategoriesService);
   });
 
   it('should be created', () => {
