@@ -1,4 +1,4 @@
-div.nav {
+nav {
   width: 100%;
   background: linear-gradient(white, rgb(233, 233, 233));
   padding: 0;
@@ -10,7 +10,7 @@ div.nav {
   justify-content: flex-start;
 }
 
-.nav a {
+nav a {
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;

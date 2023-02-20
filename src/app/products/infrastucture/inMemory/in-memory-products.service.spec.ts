@@ -14,9 +14,9 @@ describe('InMemoryProductsService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('GetAll should be return array length equal to 1', (done: DoneFn) => {
+  it('GetAll should be return array length to be greater than 0', (done: DoneFn) => {
     service.getAll().subscribe(result => {
-      expect(result.length).toBe(1);
+      expect(result.length).toBeGreaterThan(0);
       done();
     });
   });

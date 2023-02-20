@@ -22,4 +22,11 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('Gallery Products');
   });
+
+  it(`should render an app-navbar`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const navbar =
+      fixture.debugElement.nativeElement.querySelector('app-navbar');
+    expect(navbar).toBeTruthy();
+  });
 });

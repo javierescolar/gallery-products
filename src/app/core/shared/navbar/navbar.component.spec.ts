@@ -19,4 +19,9 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render a nav tag', () => {
+    const nav = fixture.debugElement.nativeElement.querySelector('nav');
+    expect(nav).toBeTruthy();
+  });
 });

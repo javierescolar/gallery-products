@@ -1,0 +1,6 @@
+<section>
+  <img
+    *ngFor="let product of products"
+    [src]="product.images[0]"
+    [alt]="product.title" />
+</section>

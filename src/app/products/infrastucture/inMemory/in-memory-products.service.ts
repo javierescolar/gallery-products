@@ -10,8 +10,46 @@ export class InMemoryProductsService implements ProductRepository {
       id: 1,
       title: 'Product 1',
       price: 199.99,
-      images: [],
+      images: [
+        'https://lumiere-a.akamaihd.net/v1/images/marvelspidermanseries-emeagrid_45274dc0.jpeg?region=240,0,480,480',
+      ],
       description: 'Description product 1',
+      creationAt: new Date().toLocaleDateString(),
+      updatedAt: new Date().toLocaleDateString(),
+      category: {
+        id: 1,
+        name: 'Category 1',
+        creationAt: new Date().toLocaleDateString(),
+        updatedAt: new Date().toLocaleDateString(),
+        image: '',
+      },
+    },
+    {
+      id: 2,
+      title: 'Product 2',
+      price: 199.99,
+      images: [
+        'https://lumiere-a.akamaihd.net/v1/images/marvelspidermanseries-emeagrid_45274dc0.jpeg?region=240,0,480,480',
+      ],
+      description: 'Description product 1',
+      creationAt: new Date().toLocaleDateString(),
+      updatedAt: new Date().toLocaleDateString(),
+      category: {
+        id: 1,
+        name: 'Category 1',
+        creationAt: new Date().toLocaleDateString(),
+        updatedAt: new Date().toLocaleDateString(),
+        image: '',
+      },
+    },
+    {
+      id: 3,
+      title: 'Product 1',
+      price: 199.99,
+      images: [
+        'https://lumiere-a.akamaihd.net/v1/images/marvelspidermanseries-emeagrid_45274dc0.jpeg?region=240,0,480,480',
+      ],
+      description: 'Description product 3',
       creationAt: new Date().toLocaleDateString(),
       updatedAt: new Date().toLocaleDateString(),
       category: {

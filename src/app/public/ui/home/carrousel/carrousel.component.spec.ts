@@ -2,17 +2,16 @@ import { Provider } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ProductRepository } from 'src/app/products/domain/repositories/product.repository';
 import { InMemoryProductsService } from 'src/app/products/infrastucture/inMemory/in-memory-products.service';
-import { CarrouselComponent } from './carrousel/carrousel.component';
 
-import { HomeComponent } from './home.component';
+import { CarrouselComponent } from './carrousel.component';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('CarrouselComponent', () => {
+  let component: CarrouselComponent;
+  let fixture: ComponentFixture<CarrouselComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomeComponent, CarrouselComponent],
+      declarations: [CarrouselComponent],
       providers: [
         {
           provide: ProductRepository,
@@ -21,7 +20,7 @@ describe('HomeComponent', () => {
       ],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(CarrouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
