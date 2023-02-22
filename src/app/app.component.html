@@ -1,4 +1,8 @@
-<app-navbar></app-navbar>
+<header>
+  <app-navbar></app-navbar>
+  <app-menu-nav></app-menu-nav>
+</header>
 <main>
   <router-outlet></router-outlet>
 </main>
+<app-spinner *ngIf="isLoading"></app-spinner>

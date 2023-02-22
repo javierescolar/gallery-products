@@ -5,7 +5,7 @@ import {
   HttpEvent,
   HttpInterceptor,
 } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { finalize, Observable } from 'rxjs';
 import { LoadingService } from '../services/loading.service';
 
 @Injectable()
@@ -16,11 +16,9 @@ export class RequestHttpInterceptor implements HttpInterceptor {
     request: HttpRequest<unknown>,
     next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
-    request = request.clone({
-      setHeaders: {
-        message: 'holita',
-      },
-    });
-    return next.handle(request);
+    this._loadingService.setLoading(true);
+    return next
+      .handle(request)
+      .pipe(finalize(() => this._loadingService.setLoading(false)));
   }
 }

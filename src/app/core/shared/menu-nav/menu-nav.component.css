@@ -1,0 +1,20 @@
+a {
+  color: #B83B5E;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+nav {
+  background: white;
+  padding: 0 10px;
+  height: 35px;
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
