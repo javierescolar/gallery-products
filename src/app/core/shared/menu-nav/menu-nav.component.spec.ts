@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { CategoryRepository } from 'src/app/products/domain/repositories/category.repository';
 import { InMemoryCategoriesService } from 'src/app/products/infrastucture/inMemory/in-memory-categories.service';
 
@@ -14,6 +15,7 @@ describe('MenuNavComponent', () => {
       providers: [
         { provide: CategoryRepository, useClass: InMemoryCategoriesService },
       ],
+      imports: [RouterTestingModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MenuNavComponent);

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UseCase } from 'src/app/core/interfaces/useCase.interface';
-import { Category } from '../domain/entities/category';
-import { CategoryRepository } from '../domain/repositories/category.repository';
+import { Category } from '../entities/category';
+import { CategoryRepository } from '../repositories/category.repository';
 
 @Injectable({
   providedIn: 'root',

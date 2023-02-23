@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UseCase } from 'src/app/core/interfaces/useCase.interface';
-import { Product } from '../domain/entities/product';
-import { ProductRepository } from '../domain/repositories/product.repository';
+import { Product } from '../entities/product';
+import { ProductRepository } from '../repositories/product.repository';
 
 @Injectable({ providedIn: 'root' })
 export class GetAllProductsService implements UseCase<void, Product[]> {

@@ -11,7 +11,6 @@ export class AppComponent implements OnInit {
   constructor(private readonly _loadingService: LoadingService) {}
   ngOnInit(): void {
     this._loadingService.isLoading().subscribe(isLoading => {
-      console.log(isLoading);
       this.isLoading = isLoading;
     });
   }

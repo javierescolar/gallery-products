@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map, tap } from 'rxjs';
-import { GetAllProductsService } from 'src/app/products/application';
+import { GetAllProductsService } from 'src/app/products/domain/useCases';
 import { Product } from 'src/app/products/domain/entities/product';
 
 @Component({

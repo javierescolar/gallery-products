@@ -1,0 +1,8 @@
+<p *ngIf="!products?.length">No existen productos ....</p>
+<section>
+  <article *ngFor="let product of products">
+    <img [src]="product.images[0]" alt="image" />
+    <h1>{{ product.title }}</h1>
+    <p>{{ product.price }}</p>
+  </article>
+</section>

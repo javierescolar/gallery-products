@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./public/public.module').then(m => m.PublicModule),
   },
+  {
+    path: 'category',
+    loadChildren: () =>
+      import('./products/products.module').then(m => m.ProductsModule),
+  },
 ];
 
 @NgModule({

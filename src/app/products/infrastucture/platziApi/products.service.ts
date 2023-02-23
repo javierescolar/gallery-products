@@ -10,6 +10,11 @@ import { ProductRepository } from '../../domain/repositories/product.repository'
 export class ProductsService implements ProductRepository {
   private readonly _urlApi = 'https://api.escuelajs.co/api/v1/products';
   constructor(private readonly _httpService: HttpClient) {}
+  getAllByCategory(categoryId: number): Observable<Product[]> {
+    return this._httpService.get<Product[]>(
+      `${this._urlApi}/?categoryId=${categoryId}`
+    );
+  }
   getAll(): Observable<Product[]> {
     return this._httpService.get<Product[]>(this._urlApi);
   }

@@ -1,7 +1,7 @@
 import { Provider } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ProductRepository } from '../domain/repositories/product.repository';
-import { InMemoryProductsService } from '../infrastucture/inMemory/in-memory-products.service';
+import { ProductRepository } from '../repositories/product.repository';
+import { InMemoryProductsService } from '../../infrastucture/inMemory/in-memory-products.service';
 
 import { GetAllProductsService } from './get-all-products.service';
 

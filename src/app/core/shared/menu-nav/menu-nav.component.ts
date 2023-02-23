@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetAllCategoriesService } from 'src/app/products/application';
-import { Category } from 'src/app/products/domain/entities/category';
-import { CategoryRepository } from 'src/app/products/domain/repositories/category.repository';
+import { Category } from '@products/entities';
+import { GetAllCategoriesService } from '@products/useCases';
 
 @Component({
   selector: 'app-menu-nav',

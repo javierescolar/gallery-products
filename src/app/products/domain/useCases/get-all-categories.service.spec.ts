@@ -1,7 +1,7 @@
 import { Provider } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { CategoryRepository } from '../domain/repositories/category.repository';
-import { InMemoryCategoriesService } from '../infrastucture/inMemory/in-memory-categories.service';
+import { CategoryRepository } from '../repositories/category.repository';
+import { InMemoryCategoriesService } from '../../infrastucture/inMemory/in-memory-categories.service';
 
 import { GetAllCategoriesService } from './get-all-categories.service';
 

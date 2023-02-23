@@ -5,6 +5,9 @@ import { ProductRepository } from '../../domain/repositories/product.repository'
 
 @Injectable({ providedIn: 'root' })
 export class InMemoryProductsService implements ProductRepository {
+  getAllByCategory(categoryId: number): Observable<Product[]> {
+    throw new Error('Method not implemented.');
+  }
   private products: Product[] = [
     {
       id: 1,
