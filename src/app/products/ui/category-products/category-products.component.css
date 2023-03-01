@@ -1,0 +1,52 @@
+.box-articles {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,300px);
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+
+picture.img-box{
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+img {
+  object-fit: cover;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px lightgray;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+
+article:hover {
+  opacity: 1;
+}
+
+h1,p {
+  margin: 5px auto;
+}
+
+button {
+  background-color: #B83B5E;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 25px;
+  border: solid 1px #921d3e;
+}
+
+button:hover {
+  opacity: 0.9;
+}

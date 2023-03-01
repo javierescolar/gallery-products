@@ -1,8 +1,11 @@
 <p *ngIf="!products?.length">No existen productos ....</p>
-<section>
+<section class="box-articles">
   <article *ngFor="let product of products">
-    <img [src]="product.images[0]" alt="image" />
+    <picture class="img-box">
+      <img [ngSrc]="product.images[0]" alt="image" fill />
+    </picture>
     <h1>{{ product.title }}</h1>
-    <p>{{ product.price }}</p>
+    <p>{{ product.price | currency : 'EUR' : true }}</p>
+    <button>Add to Cart</button>
   </article>
 </section>

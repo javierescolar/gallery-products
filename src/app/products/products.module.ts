@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { ProductsRoutingModule } from './products-routing.module';
 import { CategoryRepository } from './domain/repositories/category.repository';
@@ -10,7 +10,7 @@ import { CategoryProductsComponent } from './ui/category-products/category-produ
 
 @NgModule({
   declarations: [CategoryProductsComponent],
-  imports: [CommonModule, ProductsRoutingModule],
+  imports: [CommonModule, ProductsRoutingModule, NgOptimizedImage],
   providers: [
     { provide: ProductRepository, useClass: ProductsService },
     { provide: CategoryRepository, useClass: CategoriesService },
