@@ -38,13 +38,13 @@ h1,p {
 }
 
 button {
-  background-color: #B83B5E;
+  background-color: var(--primary-color);
   color: white;
   cursor: pointer;
   padding: 10px 20px;
   margin: 10px auto;
   border-radius: 25px;
-  border: solid 1px #921d3e;
+  border: solid 1px var(--dark-primary-color);
 }
 
 button:hover {

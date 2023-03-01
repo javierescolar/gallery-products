@@ -1,0 +1,6 @@
+h1{
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}

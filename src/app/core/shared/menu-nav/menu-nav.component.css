@@ -1,5 +1,5 @@
 a {
-  color: #B83B5E;
+  color: var(--primary-color);
   font-size: 0.8rem;
   font-weight: bold;
 }

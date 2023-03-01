@@ -1,0 +1,22 @@
+div.box-footer {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
